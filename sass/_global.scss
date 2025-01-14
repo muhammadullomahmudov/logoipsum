@@ -1,0 +1,388 @@
+body {
+    font-family: "Roboto";
+}
+
+.header {
+    background-color: #fff;
+    padding: 1rem 0;
+    box-shadow: $shadow;
+  
+    .container {
+        padding-left: 85px;
+      @include flex-center(space-between, center);
+    }
+  
+    .logo {
+      @include text-style(1.5rem, bold);
+    }
+  
+    .nav {
+      @include flex-center(space-between, center);
+      gap: 2rem;
+  
+      a {
+        text-decoration: none;
+        @include text-style(1rem, 500);
+  
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  
+    .contact-btn {
+      @include button-style($btn-bg, $btn-color);
+    }
+  }
+  
+
+  .hero {
+    padding-left: 85px;
+    background-color: $background-color;
+  
+    .container {
+      @include flex-center(space-between, center);
+      gap: 2rem;
+    }
+  
+    .hero-content {
+      max-width: 50%;
+  
+      p {
+        @include text-style(1.2rem);
+        margin-bottom: 1rem;
+      }
+  
+      h1 {
+        font-size: 2.5rem;
+        line-height: 1.4;
+        color: $secondary-color;
+  
+        .highlight {
+          color: $primary-color;
+        }
+      }
+  
+      .btn {
+        @include button-style($btn-color, $btn-bg);
+        margin-top: 1.5rem;
+      }
+    }
+  
+    .hero-image {
+      img {
+        max-width: 100%;
+        border-radius: 10px;
+      }
+    }
+  }
+
+
+
+
+
+
+
+.expertise {
+  background-color: $bg-color;
+  padding: 3rem 0;
+
+  h2 {
+    @include text-style(2rem, bold, $secondary-color);
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .cards {
+    @include flex-center(space-around, stretch, row);
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+    .card {
+      background-color: $card-bg;
+      padding: 1.5rem;
+      border-radius: $border-radius;
+      box-shadow: $box-shadow;
+      text-align: center;
+      max-width: 250px;
+
+      img {
+        width: 50px;
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        @include text-style(1.2rem, bold, $secondary-color);
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        @include text-style(0.9rem);
+        line-height: 1.6;
+      }
+    }
+  }
+}
+
+
+.about {
+  padding: 3rem 0;
+  .container {
+    @include flex-center(space-between, center, row);
+    gap: 2rem;
+
+    .about-image {
+      flex: 1;
+      img {
+        max-width: 100%;
+        border-radius: $border-radius;
+      }
+    }
+
+    .about-content {
+      flex: 1;
+
+      h3 {
+        @include text-style(1.8rem, bold, $secondary-color);
+        margin-bottom: 1rem;
+      }
+
+      p {
+        @include text-style(1rem);
+        margin-bottom: 1rem;
+        line-height: 1.6;
+      }
+    }
+  }
+}
+.portfolio {
+    padding: 3rem 0;
+    background-color: $bg-color-light;
+  
+    h2 {
+      @include text-style(2rem, bold, $secondary-color);
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  
+    .projects {
+      @include flex-center(space-around, stretch, row);
+      flex-wrap: wrap;
+      gap: 1.5rem;
+  
+      .project-card {
+        background-color: $card-bg;
+        border-radius: $border-radius;
+        box-shadow: $box-shadow;
+        padding: 1.5rem;
+        text-align: center;
+        max-width: 300px;
+  
+        img {
+          width: 100%;
+          border-radius: $border-radius;
+          margin-bottom: 1rem;
+        }
+  
+        h3 {
+          @include text-style(1.2rem, bold, $secondary-color);
+          margin-bottom: 0.5rem;
+        }
+  
+        p {
+          @include text-style(0.9rem);
+          margin-bottom: 1rem;
+        }
+  
+        a {
+          @include text-style(0.9rem, bold, $primary-color);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  
+  .testimonials {
+    padding: 3rem 0;
+  
+    h2 {
+      @include text-style(2rem, bold, $secondary-color);
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  
+    .testimonials-grid {
+      @include flex-center(space-around, stretch, row);
+      flex-wrap: wrap;
+      gap: 1.5rem;
+  
+      .testimonial {
+        background-color: $card-bg;
+        padding: 1.5rem;
+        border-radius: $border-radius;
+        box-shadow: $box-shadow;
+        max-width: 300px;
+        text-align: center;
+  
+        p {
+          @include text-style(1rem, italic, $text-color);
+          margin-bottom: 1rem;
+        }
+  
+        h3 {
+          @include text-style(1.1rem, bold, $secondary-color);
+          margin-bottom: 0.5rem;
+        }
+  
+        small {
+          @include text-style(0.9rem, normal, $text-color);
+        }
+      }
+    }
+  }
+  
+
+  .contact {
+    padding: 3rem 0;
+  
+    h2 {
+      @include text-style(2rem, bold, $secondary-color);
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+  
+      .form-group {
+        @include flex-center(space-between, center, row);
+        gap: 1rem;
+  
+        input {
+          width: 100%;
+          padding: 0.8rem;
+          border: 1px solid $text-color;
+          border-radius: $border-radius;
+        }
+      }
+  
+      textarea {
+        width: 100%;
+        padding: 0.8rem;
+        border: 1px solid $text-color;
+        border-radius: $border-radius;
+        margin-top: 1rem;
+      }
+  
+      .form-footer {
+        @include flex-center(space-between, center, row);
+        margin-top: 1rem;
+  
+        label {
+          @include text-style(0.9rem);
+        }
+  
+        button {
+          padding: 0.8rem 1.5rem;
+          background-color: $primary-color;
+          color: #fff;
+          border: none;
+          border-radius: $border-radius;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .footer {
+    background-color: $footer-bg;
+    padding: 2rem 0;
+  
+    .footer-top {
+      @include flex-center(space-between, center, row);
+      flex-wrap: wrap;
+      gap: 1rem;
+      border-bottom: 1px solid $border-color;
+      padding-bottom: 1rem;
+  
+      .logo {
+        @include flex-center(flex-start, center, row);
+        gap: 0.5rem;
+  
+        img {
+          width: 30px;
+          height: auto;
+        }
+  
+        span {
+          @include text-style(1.2rem, bold, $text-color);
+        }
+      }
+  
+      .footer-nav {
+        @include flex-center(space-between, center, row);
+        gap: 1rem;
+  
+        li {
+          list-style: none;
+  
+          a {
+            @include text-style(0.9rem, normal, $text-color);
+            text-decoration: none;
+            &:hover {
+              color: $link-color;
+            }
+          }
+        }
+      }
+  
+      .social-links {
+        @include flex-center(flex-start, center, row);
+        gap: 0.5rem;
+  
+        a {
+          color: $text-color;
+          font-size: 1.2rem;
+          text-decoration: none;
+  
+          &:hover {
+            color: $link-color;
+          }
+        }
+      }
+    }
+  
+    .footer-bottom {
+      @include flex-center(space-between, center, row);
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+  
+      p {
+        @include text-style(0.9rem, normal, $text-color);
+  
+        span {
+          color: $link-color;
+        }
+      }
+  
+      .footer-links {
+        @include flex-center(flex-start, center, row);
+
+  
+        li {
+          list-style: none;
+  
+          a {
+            @include text-style(0.9rem, normal, $text-color);
+            text-decoration: none;
+  
+            &:hover {
+              color: $link-color;
+            }
+          }
+        }
+      }
+    }
+  }

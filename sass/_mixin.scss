@@ -1,0 +1,37 @@
+@mixin flex-center($justify: center, $align: center, $direction: row) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+  }
+  
+  @mixin button-style($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    padding: 0.75rem 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: $border-radius;
+    border: 1px solid $primary-color;
+
+  }
+  
+  @mixin text-style($size, $weight: normal, $color: $secondary-color) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+  }
+  
+
+  @mixin flex-center($justify: center, $align: center, $direction: row) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+  }
+  
+  @mixin text-style($size, $weight: normal, $color: $text-color) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+  }

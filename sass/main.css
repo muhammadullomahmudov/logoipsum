@@ -1,0 +1,417 @@
+body {
+  font-family: "Roboto";
+}
+
+.header {
+  background-color: #fff;
+  padding: 1rem 0;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+.header .container {
+  padding-left: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #555;
+}
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+}
+.header .nav a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555;
+}
+.header .nav a:hover {
+  color: #5b2ded;
+}
+.header .contact-btn {
+  background-color: #fff;
+  color: #5b2ded;
+  padding: 0.75rem 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 1px solid #5b2ded;
+}
+
+.hero {
+  padding-left: 85px;
+  background-color: #f9f9ff;
+}
+.hero .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+}
+.hero .hero-content {
+  max-width: 50%;
+}
+.hero .hero-content p {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #555;
+  margin-bottom: 1rem;
+}
+.hero .hero-content h1 {
+  font-size: 2.5rem;
+  line-height: 1.4;
+  color: #000;
+}
+.hero .hero-content h1 .highlight {
+  color: #5b2ded;
+}
+.hero .hero-content .btn {
+  background-color: #5b2ded;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 1px solid #5b2ded;
+  margin-top: 1.5rem;
+}
+.hero .hero-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.expertise {
+  background-color: #f9f9ff;
+  padding: 3rem 0;
+}
+.expertise h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.expertise .cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.expertise .cards .card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 250px;
+}
+.expertise .cards .card img {
+  width: 50px;
+  margin-bottom: 1rem;
+}
+.expertise .cards .card h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+.expertise .cards .card p {
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #555;
+  line-height: 1.6;
+}
+
+.about {
+  padding: 3rem 0;
+}
+.about .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+}
+.about .container .about-image {
+  flex: 1;
+}
+.about .container .about-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.about .container .about-content {
+  flex: 1;
+}
+.about .container .about-content h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 1rem;
+}
+.about .container .about-content p {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #555;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.portfolio {
+  padding: 3rem 0;
+  background-color: #f9f9ff;
+}
+.portfolio h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.portfolio .projects {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.portfolio .projects .project-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  max-width: 300px;
+}
+.portfolio .projects .project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.portfolio .projects .project-card h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+.portfolio .projects .project-card p {
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #555;
+  margin-bottom: 1rem;
+}
+.portfolio .projects .project-card a {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #5b2ded;
+  text-decoration: none;
+}
+
+.testimonials {
+  padding: 3rem 0;
+}
+.testimonials h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.testimonials .testimonials-grid {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.testimonials .testimonials-grid .testimonial {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: center;
+}
+.testimonials .testimonials-grid .testimonial p {
+  font-size: 1rem;
+  font-weight: italic;
+  color: #555;
+  margin-bottom: 1rem;
+}
+.testimonials .testimonials-grid .testimonial h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+.testimonials .testimonials-grid .testimonial small {
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #555;
+}
+
+.contact {
+  padding: 3rem 0;
+}
+.contact h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.contact form .form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+.contact form .form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #555;
+  border-radius: 10px;
+}
+.contact form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #555;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+.contact form .form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+.contact form .form-footer label {
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #555;
+}
+.contact form .form-footer button {
+  padding: 0.8rem 1.5rem;
+  background-color: #5b2ded;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #eef7fc;
+  padding: 2rem 0;
+}
+.footer .footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 1rem;
+}
+.footer .footer-top .logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.footer .footer-top .logo img {
+  width: 30px;
+  height: auto;
+}
+.footer .footer-top .logo span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #555;
+}
+.footer .footer-top .footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+.footer .footer-top .footer-nav li {
+  list-style: none;
+}
+.footer .footer-top .footer-nav li a {
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #555;
+  text-decoration: none;
+}
+.footer .footer-top .footer-nav li a:hover {
+  color: #5b2ded;
+}
+.footer .footer-top .social-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.footer .footer-top .social-links a {
+  color: #555;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.footer .footer-top .social-links a:hover {
+  color: #5b2ded;
+}
+.footer .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.footer .footer-bottom p {
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #555;
+}
+.footer .footer-bottom p span {
+  color: #5b2ded;
+}
+.footer .footer-bottom .footer-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.footer .footer-bottom .footer-links li {
+  list-style: none;
+}
+.footer .footer-bottom .footer-links li a {
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #555;
+  text-decoration: none;
+}
+.footer .footer-bottom .footer-links li a:hover {
+  color: #5b2ded;
+}/*# sourceMappingURL=main.css.map */
